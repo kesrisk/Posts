@@ -48,3 +48,28 @@ checkout to branch docker-implementaion
 ```
     git checkout docker-implementaion
 ```
+
+
+## for the first time run migrations inside docker container
+
+- Get inside docker container
+```
+    ocker-compose run application sh
+```
+
+- make migrations and migrate
+```
+  python manage.py makemigrations
+
+  python manage.py migrate
+```
+
+now you can exit this or open a new terminal
+
+run 
+
+```
+    docker-compose up --build
+```
+
+now server is up and running on 0.0.0.0:8000
