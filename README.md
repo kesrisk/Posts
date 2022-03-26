@@ -48,7 +48,7 @@ checkout to branch docker-implementaion
 ```
     git checkout docker-implementaion
 ```
-<<<<<<< HEAD
+steps in docker-implementaion branch
 
 
 ## for the first time run migrations inside docker container
@@ -74,6 +74,3 @@ run
 ```
 
 now server is up and running on 0.0.0.0:8000
-=======
-steps in docker-implementaion branch
->>>>>>> 58c540eaa1250ccaa38cbb5384b2fb4fcdb52fa8
