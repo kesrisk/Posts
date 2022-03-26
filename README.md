@@ -54,7 +54,7 @@ checkout to branch docker-implementaion
 
 - Get inside docker container
 ```
-    ocker-compose run application sh
+    docker-compose run application sh
 ```
 
 - make migrations and migrate
