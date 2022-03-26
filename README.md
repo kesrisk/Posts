@@ -38,6 +38,7 @@ For this small project we are using file based sqlite3, everything is being take
      
   api documentation
   postman requests: https://www.getpostman.com/collections/e4b2d4a655dc6d820aa7
+  
   postman documentaion: https://documenter.getpostman.com/view/1574580/UVyn1e46
   
   
@@ -49,3 +50,28 @@ checkout to branch docker-implementaion
     git checkout docker-implementaion
 ```
 steps in docker-implementaion branch
+
+
+## for the first time run migrations inside docker container
+
+- Get inside docker container
+```
+    docker-compose run application sh
+```
+
+- make migrations and migrate
+```
+  python manage.py makemigrations
+
+  python manage.py migrate
+```
+
+now you can exit this or open a new terminal
+
+run 
+
+```
+    docker-compose up --build
+```
+
+now server is up and running on 0.0.0.0:8000
